@@ -1,0 +1,240 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+    overflow-x: hidden;
+}
+.font-black-500{
+    color: #050505;
+}
+.font-black-400{
+    color: #484848;
+}
+.font-rubik-300{
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 300 !important;
+}
+.font-rubik-400{
+    font-family: 'Rubik', sans-serif !important;
+    font-weight:  bold !important;
+    letter-spacing: .9px;
+}
+.font-rubik{
+    font-family: 'Rubik', sans-serif !important;
+}
+.font-20{
+    font-size: 25px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-16{
+    font-size: 16px !important;
+}
+.font-15{
+    font-size: 15px !important;
+}
+.font-14{
+    font-size: 14px !important;
+}
+.font-13{
+    font-size: 13.6px !important;
+}
+.font-12{
+    font-size: 12px !important;
+}
+.text-letter{
+    letter-spacing: 1.6px;
+}
+a{
+    text-decoration: none;
+    color: #484848;
+}
+a:hover{
+    color: unset;
+}
+.active{
+    font-size: 20px;
+    color: #050505;
+    font-weight: bold;
+}
+.nav-item{
+    font-family: 'Rubik', sans-serif ;
+    font-weight: 300 ;
+}
+
+.img-profile img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+p{
+    letter-spacing: 1.2px;
+    font-family: 'Rubik', sans-serif ;
+    color: #727272 !important;
+    font-weight: 300;
+}
+
+aside{
+    /* position: fixed; */
+    /* border-right: 1px solid #050505; */
+    width: 23vw !important;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    aside{
+        min-height: 0vh !important;
+        width: 100% !important; 
+        position: absolute;
+        z-index: 1;
+    }
+    .sidenav{
+        width: 100% !important;
+        border: none !important;
+    }
+
+    aside nav {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100%;
+        text-align: start;
+        padding: 5px 10px !important;
+        margin-bottom: 10px;
+        background-color: #fbfbfb;
+        height: auto;
+
+    }
+
+    aside nav button{
+        margin-bottom: 13px;
+    }
+    aside nav ul{
+        margin-left: 15px;
+        padding: 10px 0;
+    }
+    aside ul li{
+        padding: 3px 0px;
+    }
+}
+
+.sidenav{
+    position: fixed;
+    width: 23vw;
+    border-right: 1px solid #050505;
+}
+.content{
+    position: static;
+}
+
+
+@media only screen and (max-width: 600px){
+    .img-profile{
+        margin-top: 2rem;
+    }
+
+    #projects, 
+    #bookshelf, 
+    #certifications,
+    #tools,
+    #contact {
+        padding-top: 4rem;
+        margin-top: -3rem !important;
+    }
+}
+
+.hover-underline {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+}
+.hover-underline::after{
+    content: '';
+    background-color: #050505;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: .5px;
+    width: 0;
+    transition: .3s ease-out;
+}
+.hover-underline:hover::after{
+    width: 100%;
+}
+
+.tag span{
+    padding: 5px 6px;
+    border: .6px solid #868686 ;
+    border-radius: 4px;
+    color: rgb(94, 94, 94) !important;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.desc span{
+    color: rgb(68, 68, 68) !important;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: 1.2px;
+}
+.card{
+    height: 72vh;
+    border: 1px solid #a09f9f !important;
+    border-radius: 2px;
+    background: transparent;
+}
+
+.book{
+    border: 1px solid #a09f9f !important;
+    border-right: 3px solid #1b1b1b !important;
+    height: 18vh;
+}
+.book-img{
+    /* border: 1px solid black; */
+    /* padding: 0 5px; */
+    margin-right: 10px;
+}
+.book-img img{
+    object-fit: contain;
+    object-position: center;
+}
+.category span{
+    padding: 5px 6px;
+    border: .6px solid #868686 ;
+    border-radius: 4px;
+    color: rgb(94, 94, 94) !important;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.certification li a{
+    font-size: 13.6px;
+    font-weight: normal;
+    letter-spacing: 1.9px;
+    text-decoration: underline;
+    color: black;
+}
+.tool-title{
+    font-family: 'Rubik', sans-serif ;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #050505;
+}
+.tool-desc h6{
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif ;
+    letter-spacing: 1.2px;
+    font-size: 14.5px;
+    color: #050505;
+}
