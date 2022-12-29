@@ -496,7 +496,7 @@ nav .navbar-brand{
         width: 42vw !important;
     }
     #projects .card{
-        height: 37vh !important;
+        height: auto !important;
         /* height: auto !important; */
     }
     #projects .card-title{
@@ -618,7 +618,7 @@ nav .navbar-brand{
     }
     #projects .card{
         /* height: 72.5vh !important; */
-        height: 37vh !important;
+        height: auto!important;
     }
     #projects .card-title{
         font-size: .9rem !important;
@@ -737,7 +737,7 @@ nav .navbar-brand{
         width: 40vw !important;
     }
     #projects .card{
-        height: 37vh !important;
+        height: auto !important;
     }
     #projects .card-title{
         font-size: .9rem !important;
