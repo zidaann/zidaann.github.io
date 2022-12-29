@@ -79,11 +79,9 @@ p{
     font-weight: 300;
 }
 
-aside{
-    /* position: fixed; */
-    /* border-right: 1px solid #050505; */
+/* aside{
     width: 23vw !important;
-}
+} */
 
 @media only screen and (max-width: 600px) {
     body{
@@ -92,49 +90,98 @@ aside{
         box-sizing: border-box;
     }
 
-    aside{
-        min-height: 0vh !important;
-        width: 100% !important; 
-        position: absolute;
-        z-index: 1;
-    }
-    .sidenav{
-        width: 100% !important;
-        border: none !important;
-    }
-
-    aside nav {
-        position: absolute !important;
+    nav{
+        position: fixed !important;
         top: 0 !important;
         left: 0 !important;
-        width: 100%;
+        width: 100% !important;
         text-align: start;
-        padding: 5px 10px !important;
-        margin-bottom: 10px;
-        background-color: #fbfbfb;
-        height: auto;
-
+        padding: 30px 11px !important;
+        background-color: #fbfbfb !important;
+        height: 0 !important;
+        box-shadow: 0px 1px 7px 0px rgba(191,191,191,1);
+        -webkit-box-shadow: 0px 1px 7px 0px rgba(191,191,191,1);
+        -moz-box-shadow: 0px 1px 7px 0px rgba(191,191,191,1);
+        z-index: 999 !important;
+    }
+    nav .navbar-brand{
+        display: block !important;
+        margin-top: -20px;
+        margin-left: 10px;
+    }
+    nav button{
+        margin-right: 10px;
+        margin-top: -5px;
+        position: absolute;
+        border: 0 !important;
+        right: 0 !important;
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    nav ul{
+        position: absolute;
+        top: 30 !important;
+        right: 0 !important;
+        padding: 20px 30px !important;
+        width: 70% !important;
+        height: 100vh !important;
+        background-color: #fbfbfbfa !important;
+        box-shadow: -1px 8px 10px 0px rgba(138,138,138,0.66);
+        -webkit-box-shadow: -1px 8px 10px 0px rgba(138,138,138,0.66);
+        -moz-box-shadow: -1px 8px 10px 0px rgba(138,138,138,0.66);
+        /* z-index: -99 !important; */
+    }
+    nav ul li{
+        padding: 12px 0px;
+        border-bottom: .5px solid #d6d6d6 !important;
     }
 
-    aside nav button{
-        margin-bottom: 13px;
+    nav ul li:nth-child(1){
+        border-top: .5px solid #d6d6d6 !important;
     }
-    aside nav ul{
-        margin-left: 15px;
-        padding: 10px 0;
+    nav ul li a{
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        font-size: 14px;
+        color: #050505;
     }
-    aside ul li{
-        padding: 3px 0px;
+    /* aside{
+        position: absolute;
+        left: 0px !important;
+        right: 0px !important;
+        top: 0px !important;
+        border: 1px solid green;
+        height: 0px !important;
+    } */
+    .sidenav{
+        height: 0 !important;
+        z-index: 99;
+    }
+
+    .navbar-collapse{
+        padding: 10px 0px!important;
+        width: 100% !important;
+    }
+    .hover-underline::after{
+        display: none;
     }
 }
-
+@media only screen and (min-width: 776px){
+    .navbar-toggler:not(.collapsed){
+        display: block;
+    }
+}
+nav .navbar-brand{
+    display: none;
+}
 .sidenav{
     position: fixed;
     width: 23vw;
     border-right: 1px solid #050505;
-}
-.content{
-    position: static;
 }
 
 
@@ -151,7 +198,23 @@ aside{
         padding-top: 4rem;
         margin-top: -3rem !important;
     }
+
 }
+@media only screen and (min-width: 600px){
+    .img-profile{
+        margin-top: 2rem;
+    }
+
+    #projects, 
+    #bookshelf, 
+    #certifications,
+    #tools,
+    #contact {
+        padding-top: 4rem;
+        margin-top: -3rem !important;
+    }
+}
+
 
 .hover-underline {
     position: relative;
@@ -193,6 +256,44 @@ aside{
     border-radius: 2px;
     background: transparent;
 }
+.card img{
+    object-fit: contain;
+    object-position: center;
+    
+}
+@media only screen and (min-width: 600px){
+    #projects .card-title{
+        font-size: 14px !important;
+    }
+    #projects .tag span{
+        font-size: 10px !important;
+    }
+    #projects .desc span{
+        font-size: 12px !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #projects p{
+        font-size: 14px !important;
+    }
+    #projects .card{
+        height: 65vh !important;
+        width: 31vw !important;
+    }
+    #projects .card-title{
+        font-size: 11.7px !important;
+    }
+    #projects .tag {
+        display: flex;
+        width: auto !important;
+    }
+    #projects .tag span{
+        font-size: 8px !important;
+    }
+    #projects .desc span{
+        font-size: 10.7px !important;
+    }
+}
 
 .book{
     border: 1px solid #a09f9f !important;
@@ -200,14 +301,13 @@ aside{
     height: 18vh;
 }
 .book-img{
-    /* border: 1px solid black; */
-    /* padding: 0 5px; */
     margin-right: 10px;
 }
 .book-img img{
     object-fit: contain;
     object-position: center;
 }
+
 .category span{
     padding: 5px 6px;
     border: .6px solid #868686 ;
@@ -217,7 +317,41 @@ aside{
     font-weight: 400;
     font-size: 10px;
 }
+@media only screen and (min-width: 600px){
+    .category span{
+        font-size: 8px !important;
+    }
+    .book-writer{
+        font-size: 10px !important;
+    }
 
+    .book-title{
+        font-size: 11.7px !important;
+    }
+    .book-img img{
+        width: 50px !important;
+    }
+}
+@media only screen and (min-width: 776px){
+    #bookshelf p{
+        font-size: 14px !important;
+    }
+    .category{
+        width: auto !important;
+    }
+    .category span{
+        font-size: 8px !important;
+    }
+    .book-writer{
+        font-size: 9px !important;
+    }
+    .book-title{
+        font-size: 11px !important;
+    }
+    .book-img img{
+        width: 50px !important;
+    }
+}
 .certification li a{
     font-size: 13.6px;
     font-weight: normal;

@@ -7,7 +7,7 @@ menu.addEventListener('click', function(e) {
     // 4. lalu cek, jika element itu adalah link dengan class hover-underline
     if(targetMenu.classList.contains('hover-underline')) {
         // 5. maka ambil menu link yang aktif
-        const menuLinkActive = document.querySelector("aside ul li a.active");
+        const menuLinkActive = document.querySelector("ul li a.active");
         // 6. lalu cek, Jika menu link active ada dan menu yang di klik user adalah menu yang tidak sama dengan menu yang aktif, (cara cek-nya yaitu dengan membandingkan value attribute href-nya)
         if(menuLinkActive !== null && targetMenu.getAttribute('href') !== menuLinkActive.getAttribute('href')) {
             // 7. maka hapus class active pada menu yang sedang aktif
