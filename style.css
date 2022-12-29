@@ -534,7 +534,7 @@ nav .navbar-brand{
     }
 }
 
-@media screen and (min-width: 828px) and (max-width:927px) {
+@media screen and (min-width: 829px) and (max-width:927px) {
     .about p{
         font-size: .9rem !important;
     }
@@ -617,7 +617,8 @@ nav .navbar-brand{
         width: 40vw !important;
     }
     #projects .card{
-        height: 72.5vh !important;
+        /* height: 72.5vh !important; */
+        height: 37vh !important;
     }
     #projects .card-title{
         font-size: .9rem !important;
@@ -631,7 +632,9 @@ nav .navbar-brand{
     #projects .desc span{
         font-size: .8rem !important;
     }
-
+    .book{
+        height: auto !important;
+    }
     #bookshelf p{
         font-size: 14px !important;
     }
@@ -734,7 +737,7 @@ nav .navbar-brand{
         width: 40vw !important;
     }
     #projects .card{
-        height: 58vh !important;
+        height: 37vh !important;
     }
     #projects .card-title{
         font-size: .9rem !important;
@@ -748,7 +751,9 @@ nav .navbar-brand{
     #projects .desc span{
         font-size: .8rem !important;
     }
-
+    .book{
+        height: auto !important;
+    }
     #bookshelf p{
         font-size: 14px !important;
     }
@@ -765,7 +770,7 @@ nav .navbar-brand{
         font-size: 1rem!important;
     }
     .book-img img{
-        width: 70px !important;
+        width: 60px !important;
     }
 }
 @media screen and (min-width: 992px) and (max-width:1200px) {
@@ -776,7 +781,7 @@ nav .navbar-brand{
         width: 90%;
     }
     .post-project{
-        width: 32vw !important;
+        width: auto !important;
     }
     #projects .card{
         height: auto !important;
@@ -793,7 +798,9 @@ nav .navbar-brand{
     #projects .desc span{
         font-size: .8rem !important;
     }
-
+    .book{
+        height: auto !important;
+    }
     #bookshelf p{
         font-size: 14px !important;
     }
